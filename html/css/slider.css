@@ -1,0 +1,66 @@
+.container{
+    position: relative;
+}
+.container .wrapper{
+    width: 100%;
+    height: 200px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+
+    overflow: hidden;
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+    background-image: url("../img/bed-4416515_1280.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container #slider-img-2{
+    background-image: url("../img/hotel-1749602_1280.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container #slider-img-3{
+    background-image: url("../img/receptionists-5975962_1280.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container #slider-img-4{
+    background-image: url("../img/ship-105596_1280.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container .button-holder .button{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+.container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}

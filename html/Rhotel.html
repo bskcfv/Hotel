@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Hotel</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ReHotel.js"></script>
+    <link rel="stylesheet" href="css/rehotel.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+</head>
+<body>
+    <header>
+        <div id="titulologo">
+            <h1>Trsvelot</h1>
+            <a href="Main.html"><img src="img/paperplane_dm_chat_fly_interaction_communication_message_send_icon_195724.png" alt="icon"></a>
+        </div>
+        <nav id="contentnav">
+            <ul>
+                <li><a href="Ruser.html">Registrar Usuario</a></li>
+                <li><a href="Rhabitacion.html">Registrar Habitaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <fieldset>
+        <legend>Detalles del Hotel</legend>
+        <form action="" id="formHotel">
+            <div id="inputtxt">
+                <label for="id">Id_Hotel</label>
+                <input type="number" name="id_hotel" id="id" placeholder="Digite el Id del Hotel" required>
+            </div>
+            <div id="inputtxt">
+                <label for="nomHotel">Nombre</label>
+                <input type="text" name="nombre" id="nomHotel" placeholder="Digite el Nombre del Hotel" required>
+            </div>
+            <div id="inputtxt">
+                <label for="ubicacion">Ubicación</label>
+                <input type="text" name="ciudad" id="ubicacion" placeholder="Digite la ubicacion del Hotel" required>
+            </div>
+            <div id="inputtxt">
+                <label for="image">Imagen Del Hotel</label>
+                <input type="text" name="imagen" id="image" placeholder="Digite la url de la Imagen" required>
+            </div>
+            <div class="rating">
+                    <input type="radio" id="star5" name="valoracion" value="5">
+                    <label for="star5" title="5 estrellas">★</label>
+                    <input type="radio" id="star4" name="valoracion" value="4">
+                    <label for="star4" title="4 estrellas">★</label>
+                    <input type="radio" id="star3" name="valoracion" value="3">
+                    <label for="star3" title="3 estrellas">★</label>
+                    <input type="radio" id="star2" name="valoracion" value="2">
+                    <label for="star2" title="2 estrellas">★</label>
+                    <input type="radio" id="star1" name="valoracion" value="1">
+                    <label for="star1" title="1 estrella">★</label>
+            </div>
+            <div>
+                <button type="submit" id="botonEnviar">Enviar</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

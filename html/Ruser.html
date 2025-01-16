@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar User</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ReUser.js"></script>
+    <link rel="stylesheet" href="css/reuser.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <header>
+        <div id="titulologo">
+            <h1>Trsvelot</h1>
+            <a href="Main.html"><img src="img/paperplane_dm_chat_fly_interaction_communication_message_send_icon_195724.png" alt="icon"></a>
+        </div>
+        <nav id="contentnav">
+            <ul>
+                <li><a href="Rhotel.html">Registrar Hotel</a></li>
+            </ul>
+        </nav>
+</header>
+    <fieldset>
+        <legend>User</legend>
+        <form action="" id="formUser">
+            <div id="inputtxt">
+                <label for="id">Id_User</label>
+                <input type="number" name="id_user" id="id" placeholder="Digite su numero de Documento" required>
+            </div>
+            <div id="inputtxt">
+                <label for="nomuser">Nombre</label>
+                <input type="text" name="nombre" id="nomuser" placeholder="Digite su Nombre" required>
+            </div>
+            <div id="inputtxt">
+                <label for="age">Edad</label>
+                <input type="number" name="edad" id="age" placeholder="Digite su edad" required>
+            </div>
+            <div id="inputtxt">
+                <label for="corr">Correo</label>
+                <input type="email" name="correo" id="corr" placeholder="Digite su correo" required>
+            </div>
+            <div id="inputtxt">
+                <label for="psw">PassWord</label>
+                <input type="password" name="contrasena" id="psw" placeholder="Digite su contraseña" required>
+            </div>
+            <div>
+                <button type="submit" id="botonEnviar">Enviar</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

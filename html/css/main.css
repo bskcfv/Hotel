@@ -1,0 +1,69 @@
+#seccion1 article{
+    background-color: rgba(71,134,147, 0.2);
+    height: 100px;
+    /*filter: blur(15px);*/
+    display: flex;
+    flex-wrap: wrap; /* Obliga a que una etiqueta quede abajo de otra*/
+    align-items: center;
+}
+#seccion1 p{
+    width: 70%;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#seccion3{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hotel_box{
+
+    text-align: center;
+    width: 25%; 
+    margin: 10px;
+    margin-left: 5%;
+    
+}
+
+.button_hotel{
+    font-size: 20px;
+    font-style: italic;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+}
+
+
+#logo img{
+    border-radius: 10px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.button_hotel:hover{
+    box-shadow: 0px 0px 7px 4px rgba(33, 38, 38, 0.6);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    flex: 1; /* Esto empuja el footer hacia el final */
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+

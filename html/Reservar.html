@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reservar</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/Reserva.js"></script>
+    <script src="js/ReReserva.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reserva.css">
+
+</head>
+<body>
+    <header>
+        <div id="titulologo">
+            <h1>Trsvelot</h1>
+            <a href="Main.html"><img src="img/paperplane_dm_chat_fly_interaction_communication_message_send_icon_195724.png" alt="icon"></a>
+        </div>
+        <nav id="contentnav">
+            <ul>
+                <li><a href="Ruser.html">Registrar Usuario</a></li>
+                <li><a href="Rhotel.html">Registrar Hotel</a></li>
+            </ul>
+        </nav>
+</header>
+    <fieldset>
+        <legend>Calcula Tus Precios</legend>
+        <form action="" id="formcalcula">
+            <div id="inputtxt">
+                <label for="dateinit">Fecha de Entrada</label>
+                <input type="date" name="fecha_entrada" id="dateinit" placeholder="Digite la fecha de entrada" required>
+            </div>
+            <div id="inputtxt">
+                <label for="dateend">Fecha de Salida</label>
+                <input type="date" name="fecha_salida" id="dateend" placeholder="Digite la fecha de salida" required>
+            </div>
+            <div id="inputtxt">
+                <button type="submit" id="botoncalcular">Calcular Precio</button>
+            </div>
+            <div id="inputtxt">
+                
+            </div>
+        </form>
+    </fieldset>
+    <fieldset>
+        <form id="login-form">
+            <input type="text" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <legend>Reserva tu Habitacion</legend>
+        <form action="" id="formreserva">
+            <div id="inputtxt">
+                <label for="id">Id Reserva</label>
+                <input type="number" name="id_reserva" id="id" placeholder="Digite un Id de reserva">
+            </div>
+            <div id="subirfechainicio"></div>
+            <div id="subirfechafinal"></div> 
+            <div id="calcular_precio"></div>
+            <div id="subirfk_id_habt"></div>
+            <div id="subirfk_id_user"></div>
+            <div>
+                <button type="submit" id="botonEnviar">Enviar</button>
+            </div>
+        </form>
+        
+    </fieldset>
+</body>
+</html>

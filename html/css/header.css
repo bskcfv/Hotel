@@ -1,0 +1,91 @@
+header{
+    background-color:  #1e3d59;
+    display: flex;
+    height: 100px;
+    position: sticky;
+    top: 0.1px;
+}
+
+#titulologo{
+    margin-left: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    height: auto;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+img{
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+}
+
+#buscador{
+    width: 50%;
+    align-content: center;
+
+    input{
+        width: 50%;
+        border: 1px black;
+        border-radius: 10px;
+        background-color: rgba(71,134,147, 0.2);
+        color: rgb(12, 13, 13);
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 5px;
+    }
+
+    button{
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        background-image: url('../img/3844432-magnifier-search-zoom_110300.png');
+        background-size: cover;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none; /* Elimina el borde por defecto */
+        cursor: pointer; /* Cursor de puntero */
+        outline: none; /* Elimina el contorno al enfocar */
+    }
+}
+
+#contentnav{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+li{
+    background-color: rgba(71,134,147, 0.2);
+    display: inline;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+li:hover a{
+    color: rgb(241, 241, 241);
+}
+

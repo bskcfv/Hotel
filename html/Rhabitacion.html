@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Habitacion</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/selectTipoHabt.js"></script>
+    <script src="js/selectHotel.js"></script>
+    <script src="js/ReHabitacion.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/rehabitacion.css">
+
+</head>
+<body>
+    <header>
+            <div id="titulologo">
+                <h1>Trsvelot</h1>
+                <a href="Main.html"><img src="img/paperplane_dm_chat_fly_interaction_communication_message_send_icon_195724.png" alt="icon"></a>
+            </div>
+            <nav id="contentnav">
+                <ul>
+                    <li><a href="Ruser.html">Registrar Usuario</a></li>
+                    <li><a href="Rhotel.html">Registrar Hotel</a></li>
+                </ul>
+            </nav>
+    </header>
+    <fieldset>
+        <legend>Detalles de la Habitadcion</legend>
+        <form action="" id="formhabitacion">
+            <div id="inputtxt">
+                <label for="id">Id_Habitacion</label>
+                <input type="number" name="id_habitacion" id="id" placeholder="Digite el Id de Habitadcion" required>
+            </div>
+            <div id="inputtxt">
+                <label for="num_habt">Numero de Habitacion</label>
+                <input type="text" name="no_habitacion" id="num_habt" placeholder="Digite el Numero de Habitacion" required>
+            </div>
+            <div id="inputtxt">
+                <label for="state">Estado: Disponible</label>
+                <input type="checkbox" name="estado" id="state" value="Disponible" checked>
+            </div>
+            <div id="inputtxt">
+                <label for="habt_type">Tipo De Habitacion</label>
+                <select name="fk_id_tipo" id="habt_type"></select>
+            </div>
+            <div id="inputtxt">
+                <label for="hotel_choosen">Hoteles</label>
+                <select name="fk_id_hotel" id="hotel_choosen"></select>
+            </div>
+            <div id="inputtxt">
+                <label for="price">Precio por Dia: $</label>
+                <input type="number" name="precio" id="price" placeholder="Digite el Precio en pesos colombianos" required>
+            </div>
+            <div>
+                <button type="submit" id="botonEnviar">Enviar</button>
+            </div>
+        </form>
+    </fieldset>    
+</body>
+</html>
