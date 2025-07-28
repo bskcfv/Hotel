@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-RUTADATABASE = "mysql+mysqlconnector://root:@localhost:3306/hoteltech"
+RUTADATABASE = "mysql+mysqlconnector://root:cr434953@localhost:3306/hoteltech"
 
 engine = create_engine(RUTADATABASE)
 

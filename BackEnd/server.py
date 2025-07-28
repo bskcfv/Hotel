@@ -1,11 +1,12 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from python.tablas import Base
-from python.schemas import Reserva ,User, HotelBase, HabitacionBase, TipoHabitacionBase, UserBase, ReservaBase, Hotel, Habitacion, TipoHabitacion, User
-from python.crud import insertar_reserva ,consultar_hotel,consultar_hotel_by_id, consultar_tipo, consultar_hotel_by_name, consultar_hotel_by_ciudad, consultar_habitacion_by_id ,consultar_habitaciones_by_idhotel, insertar_hotel, insertar_habitacion, insertar_user, login
-from python.conexiondb import SessionLocal, engine, Base
 from typing import List
 from fastapi.middleware.cors import CORSMiddleware 
+from Config.DB.conexiondb import SessionLocal, engine, Base
+from Config.DB.tablas import Base
+from Config.DB.schemas import Reserva ,User, HotelBase, HabitacionBase, TipoHabitacionBase, UserBase, ReservaBase, Hotel, Habitacion, TipoHabitacion, User
+from Services.crud import insertar_reserva ,consultar_hotel,consultar_hotel_by_id, consultar_tipo, consultar_hotel_by_name, consultar_hotel_by_ciudad, consultar_habitacion_by_id ,consultar_habitaciones_by_idhotel, insertar_hotel, insertar_habitacion, insertar_user, login
+
 
 Base.metadata.create_all(bind=engine)
 

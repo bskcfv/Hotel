@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import relationship
-from python.conexiondb import Base
+from Config.DB.conexiondb import Base
 
 class Hotel(Base):
     __tablename__ = "hotel"

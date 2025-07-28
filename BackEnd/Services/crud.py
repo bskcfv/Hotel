@@ -1,8 +1,9 @@
 from sqlalchemy.orm import Session, joinedload, join
-from python.tablas import Hotel, Habitacion, Tipo_Habitacion, Users, Reserva
-from python.schemas import HotelBase, HabitacionBase, TipoHabitacionBase, UserBase, ReservaBase
 from fastapi import HTTPException
 from sqlalchemy.exc import IntegrityError
+from Config.DB.tablas import Hotel, Habitacion, Tipo_Habitacion, Users, Reserva
+from Config.DB.schemas import HotelBase, HabitacionBase, TipoHabitacionBase, UserBase, ReservaBase
+
 
 def consultar_hotel(db:Session):
     return db.query(Hotel).all()
