@@ -5,24 +5,25 @@ from Config.DB.tablas import Hotel, Habitacion, Tipo_Habitacion, Users, Reserva
 from Config.DB.schemas import HotelBase, HabitacionBase, TipoHabitacionBase, UserBase, ReservaBase
 
 
+#Sí
 def consultar_hotel(db:Session):
     return db.query(Hotel).all()
-
+#Si
 def consultar_tipo(db:Session):
     return db.query(Tipo_Habitacion).all()
-
+#Si
 def consultar_hotel_by_id(id_hotel:int, db:Session):
     return db.query(Hotel).filter(Hotel.id_hotel == id_hotel).first()
-
+#No
 def consultar_habitacion_by_id(id_habitacion:int, db:Session):
     return db.query(Habitacion).filter(Habitacion.id_habitacion == id_habitacion).first()
-
+#Si
 def consultar_habitaciones_by_idhotel(fk_hotel: int, db: Session):
     return db.query(Habitacion).join(Tipo_Habitacion).filter(Habitacion.fk_id_hotel == fk_hotel).all()
-
+#Si
 def consultar_hotel_by_name(db:Session, nombre:str):
     return db.query(Hotel).filter(Hotel.nombre == nombre).all()
-
+#Si
 def consultar_hotel_by_ciudad(db:Session, ciudad:str):
     return db.query(Hotel).filter(Hotel.ciudad == ciudad).all()
 

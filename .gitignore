@@ -13,3 +13,5 @@ __pycache__/
 # Ignorar carpetas de VSCode 
 .vscode/
 
+# Ignorar Modules Node
+node_modules/
